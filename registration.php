@@ -92,6 +92,32 @@
     </style>
 </head>
 <body>
-    
+    <main>
+        <form action="submit.php" method="post">
+            <input type="text" name="first" placeholder="fullname"   class="grid-input" >
+            <input type="text" name="last" placeholder="last_name"   class="grid-input">
+            <input type="email" name="email" placeholder="user email" class="grid-input">
+            <input type="password" name="password" placeholder="user pass" class="grid-input">
+            <input type="text" name="name" minlength="3" maxlength="10" placeholder="user pass" class="grid-input">
+            <input type="hidden" name="usertype" value="admin" minlength="3" maxlength="10" placeholder="user pass" class="grid-input">
+            <input type="date" name="date" min="<?php echo date('Y-m-d'); ?>"   >
+           
+   <!--
+            <input type="checkbox" name="checkbox[]" class="" id="" value="Java" ><label for="checkbox">Java </label>
+            <input type="checkbox" name="checkbox[]" id="" value="C++"><label for="checkbox"> C++ </label>
+            <input type="checkbox" name="checkbox[]" id="" value="PHP"><label for="checkbox"> PHP++ </label>
+
+      -->
+            <input type="radio" name="year-level[]" id="" value="1" ><label for="year-level">Java </label>
+            <input type="radio" name="year-level[]" id="" value="2"><label for="year-level"> C++ </label>
+            <input type="radio" name="year-level[]" id="" value="3"><label for="year-level"> PHP++ </label>
+
+            <input type="submit" value="click me">
+            <input type="reset" value="this is reset">
+            
+           
+
+        </form>
+    </main>
 </body>
 </html> 
